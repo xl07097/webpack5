@@ -6,7 +6,6 @@
     "node": true
   },
   "extends": [
-    "plugin:vue/essential",
     "prettier"
   ],
   "globals": {
@@ -21,7 +20,6 @@
     }
   },
   "plugins": [
-    "vue",
     "prettier"
   ],
   "rules": {

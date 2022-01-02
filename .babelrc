@@ -16,8 +16,6 @@
     ]
   ],
   "plugins": [
-    "@babel/plugin-syntax-jsx",
-    "@vue/babel-plugin-transform-vue-jsx"
     // [
     //   "@babel/plugin-transform-runtime",
     //   {

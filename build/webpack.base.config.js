@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: {
@@ -61,17 +60,14 @@ module.exports = {
       title: 'vue 练习',
       filename: path.resolve(__dirname, '../dist/index.html'),
       template: path.resolve(__dirname, '../public/index.html'),
-      inject: true
+      inject: true,
     }),
-    // new BundleAnalyzerPlugin(),
-    new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, '../src')
+      '@': path.resolve(__dirname, '../src'),
     },
-    extensions: ['.js', '.json', '.vue'],
+    extensions: ['.js', '.json'],
   },
 };
