@@ -17,16 +17,16 @@
   ],
   "plugins": [
     "@babel/plugin-syntax-jsx",
-    "@vue/babel-plugin-transform-vue-jsx",
-    [
-      "@babel/plugin-transform-runtime",
-      {
-        "absoluteRuntime": false,
-        "corejs": 3,
-        "helpers": true,
-        "regenerator": true,
-        "useESModules": false
-      }
-    ]
+    "@vue/babel-plugin-transform-vue-jsx"
+    // [
+    //   "@babel/plugin-transform-runtime",
+    //   {
+    //     "absoluteRuntime": false,
+    //     "corejs": 3,
+    //     "helpers": true,
+    //     "regenerator": true,
+    //     "useESModules": false
+    //   }
+    // ]
   ]
 }
